@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.apache.groovy:groovy-json:4.0.6">
+  <library name="Gradle: org.apache.groovy:groovy-json:4.0.6" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.groovy/groovy-json/4.0.6/14fa2997f9164cf5171cc0d8ef82f59ec82039fa/groovy-json-4.0.6.jar!/" />
     </CLASSES>

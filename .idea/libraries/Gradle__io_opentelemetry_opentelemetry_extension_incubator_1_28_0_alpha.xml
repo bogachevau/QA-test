@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: io.opentelemetry:opentelemetry-extension-incubator:1.28.0-alpha">
+  <library name="Gradle: io.opentelemetry:opentelemetry-extension-incubator:1.28.0-alpha" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/ad51d2ab228f522448afb90503ce005ce4a4f2ac/opentelemetry-extension-incubator-1.28.0-alpha.jar!/" />
     </CLASSES>

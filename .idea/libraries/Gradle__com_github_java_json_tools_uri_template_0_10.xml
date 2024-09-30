@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.java-json-tools:uri-template:0.10">
+  <library name="Gradle: com.github.java-json-tools:uri-template:0.10" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.java-json-tools/uri-template/0.10/6e8cf7b04f5ed679c76f15e0b19918906d84dbc4/uri-template-0.10.jar!/" />
     </CLASSES>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: io.opentelemetry:opentelemetry-api-events:1.28.0-alpha">
+  <library name="Gradle: io.opentelemetry:opentelemetry-api-events:1.28.0-alpha" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api-events/1.28.0-alpha/c663155d53746308c8d2e37121b990c3a8de8d58/opentelemetry-api-events-1.28.0-alpha.jar!/" />
     </CLASSES>

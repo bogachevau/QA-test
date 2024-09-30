@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: io.rest-assured:json-path:5.3.0">
+  <library name="Gradle: io.rest-assured:json-path:5.3.0" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/json-path/5.3.0/f389c8bad3550779013822687ac3138b9594efc/json-path-5.3.0.jar!/" />
     </CLASSES>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.java-json-tools:json-schema-validator:2.2.14">
+  <library name="Gradle: com.github.java-json-tools:json-schema-validator:2.2.14" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.java-json-tools/json-schema-validator/2.2.14/10c42918adc1fd4454e83bb21365f30df497a076/json-schema-validator-2.2.14.jar!/" />
     </CLASSES>

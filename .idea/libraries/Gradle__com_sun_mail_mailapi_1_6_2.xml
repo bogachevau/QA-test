@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.sun.mail:mailapi:1.6.2">
+  <library name="Gradle: com.sun.mail:mailapi:1.6.2" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.mail/mailapi/1.6.2/208b6439dfbe6713c384ebf54ecd62cd4423cc50/mailapi-1.6.2.jar!/" />
     </CLASSES>
