@@ -3,7 +3,6 @@ package core.UI;
 import core.UI.page_dzen.HomePage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 /**
  * Ваша задача - автоматизировать открытие главной страницы сайта https://dzen.ru/
@@ -17,12 +16,15 @@ public class OpenBaseScreen extends BaseTest {
     @Test
     public void testOpenBaseScreenCss() {
         HomePage homePage = new HomePage(driver);
-        homePage.checkLogoCss();
+        Assertions.assertTrue(homePage
+                .checkLogoCss());
     }
 
     @Test
     public void testOpenBaseScreenHtml() {
-
+        HomePage homePage = new HomePage(driver);
+        Assertions.assertTrue(homePage
+                .checkLogoXpath());
     }
 
 }

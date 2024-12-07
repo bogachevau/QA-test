@@ -1,15 +1,10 @@
 package core.API;
 
-import dev.failsafe.internal.util.Assert;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.hamcrest.Matchers.greaterThan;
+
 import static io.restassured.RestAssured.given;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /** Ваша задача - автоматизировать запрос эндпоинта
  DELETE /api/users/2

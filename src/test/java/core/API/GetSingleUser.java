@@ -1,11 +1,6 @@
 package core.API;
 
-import core.API.pojo.UserData;
-import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;

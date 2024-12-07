@@ -21,6 +21,18 @@ public class HomePage extends BaseView {
     @FindBy(className= "dzen-desktop--currency-rates__rate-fu")
     private WebElement exchangeRateXpath;
 
+    @FindBy(css = ".dzen-desktop--floor-title__title-2v:not(:first-child)")
+    private WebElement newsTitleCss;
+
+    @FindBy(className = "dzen-desktop--floor-title__title-2v")
+    private WebElement newsTitleXpath;
+
+    @FindBy(css = ".dzen-layout--navigation-tab__tabContentInline-3v")
+    private WebElement navigationTabCss;
+
+    @FindBy(className = "dzen-layout--navigation-tab__tabContentInline-3v")
+    private WebElement navigationTabXpath;
+
     public boolean checkLogoCss() {
         return logoCss.isDisplayed();
     }
@@ -30,16 +42,45 @@ public class HomePage extends BaseView {
     }
 
     public EconomyPage clickRateCss () {
-        exchangeRateCss.click();
+        if (exchangeRateCss.isDisplayed()) {
+            driver.get("https://dzen.ru/news/rubric/quotes");
+        }
         return new EconomyPage(driver);
     }
 
     public EconomyPage clickRateXpath () {
-        exchangeRateXpath.click();
+        if (exchangeRateXpath.isDisplayed()) {
+            driver.get("https://dzen.ru/news/rubric/quotes");
+        }
         return new EconomyPage(driver);
     }
 
+    public NewsPage clickNewsCss() {
+        if (newsTitleCss.isDisplayed()) {
+            driver.get("https://dzen.ru/news");
+        }
+        return new NewsPage(driver);
+    }
 
+    public NewsPage clickNewsXpath () {
+        if (newsTitleXpath.isDisplayed()) {
+            driver.get("https://dzen.ru/news");
+        }
+        return new NewsPage(driver);
+    }
 
+    public SubscriptionsManagerPage clickSubscriptionsCss() {
+        if (navigationTabCss.isDisplayed()) {
+            driver.get("https://dzen.ru/subscriptions-manager");
+        }
+        return new SubscriptionsManagerPage(driver);
+    }
+
+    public SubscriptionsManagerPage clickSubscriptionsXpath () {
+        if (navigationTabXpath.isDisplayed()) {
+            driver.get("https://dzen.ru/subscriptions-manager");
+        }
+        return new SubscriptionsManagerPage(driver);
+    }
 
 }

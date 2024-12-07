@@ -1,4 +1,10 @@
 package core.UI;
+
+import core.UI.page_dzen.HomePage;
+import core.UI.page_dzen.SubscriptionsManagerPage;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 /** Ваша задача - автоматизировать открытие главной страницы сайта https://dzen.ru/,
  и переход с неё на страницу https://dzen.ru/subscriptions-manager, после чего - успешный ввод
 
@@ -9,5 +15,39 @@ package core.UI;
  4. Присутствует проверка, что есть кнопка "Войти" - на экране подписки, не в шапке главного.
  5. Присутствует проверка, что по нажатию на кнопку "Войти" предлагается 2 типа входа
  **/
-public class OpenSubscriptionsScreen {
+public class OpenSubscriptionsScreen extends BaseTest {
+    @Test
+    public void testOpenSubscriptionsCss() {
+        HomePage homePage = new HomePage(driver);
+
+        Assertions.assertTrue(homePage
+                .checkLogoCss());
+
+        Assertions.assertTrue(homePage
+                .clickSubscriptionsCss()
+                .checkAddSubscriptionCss());
+
+        SubscriptionsManagerPage subscriptionsManagerPage = new SubscriptionsManagerPage(driver);
+        Assertions.assertTrue(subscriptionsManagerPage
+                .clickEntryCss()
+                .checkEntryVkAndYandexCss());
+    }
+
+    @Test
+    public void testOpenSubscriptionsXpath() {
+        HomePage homePage = new HomePage(driver);
+
+        Assertions.assertTrue(homePage
+                .checkLogoXpath());
+
+        Assertions.assertTrue(homePage
+                .clickSubscriptionsXpath()
+                .checkAddSubscriptionXpath());
+
+        SubscriptionsManagerPage subscriptionsManagerPage = new SubscriptionsManagerPage(driver);
+
+        Assertions.assertTrue(subscriptionsManagerPage
+                .clickEntryXpath()
+                .checkEntryVkAndYandexXpath());
+    }
 }

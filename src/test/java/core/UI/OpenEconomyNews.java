@@ -1,8 +1,8 @@
 package core.UI;
 
+import core.UI.page_dzen.HomePage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 /** Ваша задача - автоматизировать открытие главной страницы сайта https://dzen.ru/,
  и переход с неё на страницу https://dzen.ru/news/quotes
@@ -17,10 +17,26 @@ import org.openqa.selenium.By;
 public class OpenEconomyNews extends BaseTest {
     @Test
     public void testOpenEconomyNewsCss() {
-        driver.findElement(By.cssSelector("a.dzen-desktop--currency-rates__rate-fu")).click();
-        String url = driver.getCurrentUrl();
-        boolean textEconomyNews = driver.findElement(By
-                .xpath("//h1[@class='news-site--TopRubricHeading-desktop__title-ho']")).isDisplayed();
-        Assertions.assertTrue(textEconomyNews);
+        //String economyText = "Экономика";
+        HomePage homePage = new HomePage(driver);
+
+        Assertions.assertTrue(homePage
+                .checkLogoCss());
+
+        Assertions.assertTrue(homePage
+                .clickRateCss()
+                .checkEconomyCss());
+    }
+
+    @Test
+    public void testOpenEconomyNewsXpath() {
+        HomePage homePage = new HomePage(driver);
+
+        Assertions.assertTrue(homePage
+                .checkLogoXpath());
+
+        Assertions.assertTrue(homePage
+                .clickRateXpath()
+                .checkEconomyXpath());
     }
 }

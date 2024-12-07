@@ -9,10 +9,20 @@ public class EconomyPage extends BaseView {
         super(driver);
     }
 
+    //https://dzen.ru/news/rubric/quotes
+
     @FindBy(css = ".news-site--TopRubricHeading-desktop__title-ho")
-    public WebElement titleCss;
+    private WebElement titleCss;
 
     @FindBy(className = "news-site--TopRubricHeading-desktop__title-ho")
-    public WebElement titleXpath;
+    private WebElement titleXpath;
+
+    public boolean checkEconomyCss() {
+        return titleCss.isDisplayed();
+    }
+
+    public boolean checkEconomyXpath() {
+        return titleXpath.isDisplayed();
+    }
 
 }
